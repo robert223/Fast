@@ -7,6 +7,7 @@ import asciiPanel.AsciiPanel;
 public class WinScreen implements Screen {
 
     public void displayOutput(AsciiPanel terminal) {
+        System.out.println("[WinScreen] Drawing screen");
         terminal.write("You won.", 1, 1);
         terminal.writeCenter("-- press [enter] to restart --", 22);
     }

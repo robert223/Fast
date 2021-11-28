@@ -10,7 +10,6 @@ public class MainMenu implements Screen {
 
 
     public void displayOutput(AsciiPanel terminal) {
-        System.out.println("[MainMenu] Drawing title");
         terminal.writeCenter("    ______              __ ", 2);
         terminal.writeCenter("   / ____/____ _ _____ / /_", 3);
         terminal.writeCenter("  / /_   / __ `// ___// __/", 4);

@@ -1,8 +1,8 @@
 package fastrl;
 
 public class WorldBuilder {
-    private int width;
-    private int height;
+    private final int width;
+    private final int height;
     private Tile[][] tiles;
 
     public WorldBuilder(int width, int height) {
@@ -15,6 +15,7 @@ public class WorldBuilder {
         return new World(tiles);
     }
 
+    // make random tiles
     private WorldBuilder randomizeTiles() {
         System.out.println("Randomizing Tiles");
         for (int x = 0; x < width; x++) {
@@ -25,6 +26,7 @@ public class WorldBuilder {
         return this;
     }
 
+    // smooth tiles
     private WorldBuilder smooth(int times) {
         System.out.println("Smoothing Tiles...");
         Tile[][] tiles2 = new Tile[width][height];
@@ -55,7 +57,9 @@ public class WorldBuilder {
         return this;
     }
 
+    // the method that actually gets called
     public WorldBuilder makeCaves() {
+
         return randomizeTiles().smooth(8);
     }
 }
