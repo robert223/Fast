@@ -15,7 +15,6 @@ public class WorldBuilder {
         return new World(tiles);
     }
 
-    // makes random tiles
     private WorldBuilder randomizeTiles() {
         System.out.println("Randomizing Tiles");
         for (int x = 0; x < width; x++) {
@@ -26,7 +25,6 @@ public class WorldBuilder {
         return this;
     }
 
-    // smooths the tiles from the last method
     private WorldBuilder smooth(int times) {
         System.out.println("Smoothing Tiles...");
         Tile[][] tiles2 = new Tile[width][height];
@@ -57,7 +55,6 @@ public class WorldBuilder {
         return this;
     }
 
-    // makes caves
     public WorldBuilder makeCaves() {
         return randomizeTiles().smooth(8);
     }
