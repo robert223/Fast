@@ -56,7 +56,7 @@ public class WorldBuilder {
         }
         return this;
     }
-    //test4
+
     // the method that actually gets called
     public WorldBuilder makeCaves() {
 

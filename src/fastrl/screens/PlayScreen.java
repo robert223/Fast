@@ -91,8 +91,8 @@ public class PlayScreen implements Screen {
         }
     }
 
-    private void scrollBy(int mx, int my) {
-        centerX = Math.max(0, Math.min(centerX + mx, world.getWidth() - 1));
-        centerY = Math.max(0, Math.min(centerY + my, world.getHeight() - 1));
+    private void scrollBy(int mX, int mY) {
+        centerX = Math.max(0, Math.min(centerX + mX, world.getWidth() - 1));
+        centerY = Math.max(0, Math.min(centerY + mY, world.getHeight() - 1));
     }
 }

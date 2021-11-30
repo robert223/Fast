@@ -1,13 +1,13 @@
-package fastrl;
+package fastrl.items;
 
 import java.awt.Color;
 
 import asciiPanel.AsciiPanel;
 
-public enum Tile {
+public enum Item {
 
     // ascii panel supports code page 437
-    FLOOR((char) 250, AsciiPanel.yellow),
+    WARHAMMER((char) 15, AsciiPanel.red),
     WALL((char) 178, AsciiPanel.yellow),
     BOUNDS('x', AsciiPanel.brightBlack);
 
@@ -23,7 +23,7 @@ public enum Tile {
         return color;
     }
 
-    Tile(char glyph, Color color) {
+    Item(char glyph, Color color) {
         this.glyph = glyph;
         this.color = color;
     }

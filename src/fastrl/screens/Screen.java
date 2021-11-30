@@ -6,8 +6,8 @@ import asciiPanel.AsciiPanel;
 
 public interface Screen {
     // takes an asciipanel to display itself on
-    public void displayOutput(AsciiPanel terminal);
+    void displayOutput(AsciiPanel terminal);
 
-    // responds to key pressed
-    public Screen respondToUserInput(KeyEvent key);
+    // screens respond to pressed keys
+    Screen respondToUserInput(KeyEvent key);
 }

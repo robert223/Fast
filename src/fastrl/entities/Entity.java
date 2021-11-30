@@ -1,13 +1,16 @@
-package fastrl;
+package fastrl.entities;
+
+import fastrl.World;
 
 import java.awt.Color;
 
+// generic entity with no health or ability to move
 public class Entity {
-    private World world;
+    private final World world;
     public int x;
     public int y;
-    private char glyph;
-    private Color color;
+    private final char glyph;
+    private final Color color;
 
     public char getGlyph() {
         return glyph;
