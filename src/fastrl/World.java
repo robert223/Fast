@@ -6,6 +6,11 @@ public class World {
     private Tile[][] tiles;
     private int width;
 
+    public void dig(int x, int y) {
+        if (getTile(x, y).isDiggable())
+            tiles[x][y] = Tile.FLOOR;
+    }
+
     public int getWidth() {
         return width;
     }
@@ -34,6 +39,6 @@ public class World {
     }
 
     public Color getColor(int x, int y) {
-        return getTile(x, y).color();
+        return getTile(x, y).getColor();
     }
 }

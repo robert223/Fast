@@ -4,6 +4,8 @@ import java.awt.Color;
 
 import asciiPanel.AsciiPanel;
 
+import org.json.*;
+
 public enum Item {
 
     // ascii panel supports code page 437
