@@ -8,6 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="asciiPanel" level="project" />
-    <orderEntry type="library" name="json" level="project" />
+    <orderEntry type="library" name="jackson.asl" level="project" />
   </component>
 </module>

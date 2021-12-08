@@ -15,9 +15,9 @@ public class Entity {
     private final char glyph;
     private final Color color;
 
-public void moveBy(int mx, int my) {
-    ai.onEnter(x+mx, y+my, world.getTile(x+mx, y+my));
-}
+    public void moveBy(int mx, int my) {
+        ai.onEnter(x + mx, y + my, world.getTile(x + mx, y + my));
+    }
 
     public void dig(int x, int y) {
         world.dig(x, y);
